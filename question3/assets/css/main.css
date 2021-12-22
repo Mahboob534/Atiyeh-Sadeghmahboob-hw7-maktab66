@@ -1,0 +1,133 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+}
+html::after
+html:before{
+    box-sizing:inherit;
+}
+.container{
+    background-color: black;
+    color:white;
+    margin:10% 1% 1% 1%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.main{
+    display: flex;
+    margin-bottom:10%; 
+    margin-left:15% ;   
+}
+.header {
+   display: flex;
+   flex-basis: 30%; 
+   height: 10vh; 
+   text-align: center;  
+}
+.header h1{
+    font-weight:900;
+    align-self:center;  
+    
+}
+.image{
+    width:50px;
+    height:50px;
+    align-self: center;
+    border-radius:50%;
+    margin-left:4%;
+}
+.content{
+    flex-basis:50%;
+    font-size:1em;    
+}
+
+.imgprofile{
+    
+    justify-content: flex-end; 
+    margin-right:3%;
+    align-self: center;
+}      
+.imgprofile img{
+     width:100px;
+    height:100px;
+     border-radius: 50%;
+}
+hr{
+    margin:0 10%;
+    border-color:plum;
+}
+
+.footer {
+    display:flex;
+    flex-direction:column;
+    margin-top:10%;
+    justify-content: center;
+    align-items: center;
+}
+.footer h3{
+    margin:1%;
+}
+.row{
+    margin:3% 2% 1% 1%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+}
+.col{
+    flex-basis:18%;
+}  
+.img{
+   background-color:white ;
+   width:60px;
+   height:60px;
+   border-radius: 50%; 
+   margin:0;
+   padding:0;  
+}
+.title{
+   color:palevioletred; 
+   width:auto ;
+  height:2em;  
+}
+@media  (max-width:768px) {
+  .main{
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 100%;
+    margin-left:0;
+   }
+   .imgprofile{
+       align-self: center;
+   }
+   .content{
+      flex-basis:100%;
+   }
+   .row{
+      flex-wrap: wrap;
+      flex-basis:50%;  
+      margin:4%;
+      flex-shrink: 0;
+      
+   }
+   .col{
+       flex-basis: 40%;
+       margin: 2%;
+
+   }
+    
+} 
+@media (max-width:576px) {
+    .main {
+      flex-wrap: wrap;
+      flex-direction: column;
+      flex-basis: 100%;
+    } 
+    .row{
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-basis:100% ;
+         
+    }
+  } 
